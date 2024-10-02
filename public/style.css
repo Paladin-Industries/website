@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Ranille;
+  src: url(./Arterfak-Project-Ranille-twa1g3/Ranille.ttf);
+}
+
+* {
+  font-family: Ranille;
+  font-variant-ligatures: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  color: #262626;
+  gap: 3rem;
+  padding: 0 20vw;
+}
+
+.flex-spacer {
+  height: 7rem;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./87510001.jpg);
+  filter: contrast(0.4) brightness(1.4);
+  background-size: cover;
+  background-position: top;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 0;
+  z-index: 1;
+  letter-spacing: -0.05rem;
+}
+
+.mission-statement,
+.contact {
+  font-size: 2rem;
+  line-height: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .mission-statement,
+  .contact {
+    font-size: 1.2rem;
+  }
+
+  .background-image {
+    background: url(./87510001_narrow.jpg);
+    background-size: cover;
+  }
+
+  .content-container {
+    padding: 0 10vw;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .flex-spacer {
+    height: 3rem;
+  }
+}
